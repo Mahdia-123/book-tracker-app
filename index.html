@@ -26,6 +26,27 @@
     <link rel="stylesheet" href="src/styles.css" />
     <title>📚 Book Tracker App</title>
   </head>
+  <div class="container">
+    <div class="form-container">
+      <h1 class="form-title">Add Your Next Read</h1>
+      <form id="form ">
+        <div class="grid grid-2-columns">
+          <input type="text" placeholder="Title" id="bookName" />
+          <input type="text" placeholder="Author" id="authorName" />
+          <button class="btn" id="button" type="submit">Add Book</button>
+        </div>
+        <div class="checkbox-row">
+          <input type="checkbox" id="finishedInput" />
+          <label for="finishedInput">Finished</label>
+        </div>
+      </form>
+      <section class="booksList-section">
+        <div id="booksList">
+          <!-- Books will be listed here -->
+        </div>
+      </section>
+    </div>
+  </div>
   <body>
     <script src="src/script.js"></script>
   </body>

@@ -1,0 +1,75 @@
+body {
+  background: #f5eee4;
+  margin: 0;
+  font-family: "PT Mono", monospace;
+}
+.container {
+  padding: 20px;
+  max-width: 650px;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  display: block;
+  background: white;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  margin-top: 100px;
+  border-radius: 10px;
+}
+.container h1 {
+  font-size: 20px;
+  font-weight: bold !important;
+  margin-bottom: 15px;
+}
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  grid-gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.btn {
+  background: #e08600;
+  color: white;
+}
+.btn:hover {
+  border: 1px solid #e08600;
+  color: #e08600;
+  background: white;
+}
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.checkbox-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #e08600;
+}
+
+.booksList-section {
+  border: 1px solid #e08600;
+  padding: 10px;
+}
+.booksList-section .delete-btn {
+  background: #e08600;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+.booksList-section .delete-btn:hover {
+  border: 1px solid #e08600;
+  color: #e08600;
+  background: white;
+}
