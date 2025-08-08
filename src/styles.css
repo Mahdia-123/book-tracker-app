@@ -5,11 +5,11 @@ body {
 }
 body.light-theme {
   background-color: #f5eee4;
-  color: #142e49;
+  color: black;
 }
 
 body.dark-theme {
-  background-color: black;
+  background-color: f9f7fe;
   color: black;
 }
 .change-theme {
@@ -112,7 +112,6 @@ input {
 footer {
   text-align: center;
   font-size: 14px;
-  color: #e08600;
 }
 footer a {
   color: #e08600;
