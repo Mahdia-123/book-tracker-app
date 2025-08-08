@@ -24,7 +24,6 @@ body.dark-theme {
 .change-theme:hover {
   transition: transform 0.03ms all ease-in-out;
   transform: scale(1.5);
-  color: ;
 }
 .container {
   padding: 20px;
@@ -53,7 +52,7 @@ input {
   width: 100%;
   padding: 8px;
   font-size: 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #e08600;
   border-radius: 8px;
   box-sizing: border-box;
 }
@@ -110,9 +109,17 @@ input {
   color: #e08600;
   background: white;
 }
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+footer a {
+  color: #e08600;
+}
+footer a:hover {
+  color: #805003;
+}
 @media (max-width: 960px) {
-  .container {
-  }
   .book-name {
     font-size: 8px;
   }
@@ -126,5 +133,8 @@ input {
   }
   .btn {
     font-size: 12px;
+  }
+  .footer {
+    font-size: 10px;
   }
 }

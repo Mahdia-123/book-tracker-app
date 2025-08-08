@@ -58,7 +58,6 @@ function dislplayBookList(event) {
 
   renderBooks();
 
-  // Clear inputs
   bookInput.value = "";
   authorInput.value = "";
   finishedInput.checked = false;
@@ -67,10 +66,9 @@ function dislplayBookList(event) {
 let button = document.getElementById("button");
 button.addEventListener("click", dislplayBookList);
 
-// Render saved books on page load
 renderBooks();
 
-// displsu buttons
+// Display buttons
 let hideButton = document.getElementById("hideBook");
 let showButton = document.getElementById("showBook");
 
@@ -80,13 +78,12 @@ function showBooks() {
 function hideBooks() {
   booksList.style.display = "none";
 }
-
+// change Theme
 showButton.addEventListener("click", showBooks);
 hideButton.addEventListener("click", hideBooks);
 
-let body = document.body;
-
 function changeTheme() {
+  let body = document.body;
   if (body.classList.contains("light-theme")) {
     body.classList.remove("light-theme");
     body.classList.add("dark-theme");
