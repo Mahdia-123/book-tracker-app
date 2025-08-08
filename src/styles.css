@@ -3,9 +3,32 @@ body {
   margin: 0;
   font-family: "PT Mono", monospace;
 }
+body.light-theme {
+  background-color: #f5eee4;
+  color: #142e49;
+}
+
+body.dark-theme {
+  background-color: black;
+  color: black;
+}
+.change-theme {
+  border: none;
+  background: none;
+  margin: 0 auto;
+  display: block;
+  color: #e08600;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.change-theme:hover {
+  transition: transform 0.03ms all ease-in-out;
+  transform: scale(1.5);
+  color: ;
+}
 .container {
   padding: 20px;
-  max-width: 650px;
+  max-width: 960px;
   border: 1px solid #ddd;
   margin: 0 auto;
   display: block;
@@ -14,7 +37,7 @@ body {
   margin-top: 100px;
   border-radius: 10px;
 }
-.container h1 {
+.container h2 {
   font-size: 20px;
   font-weight: bold !important;
   margin-bottom: 15px;
@@ -60,6 +83,7 @@ input {
 .booksList-section {
   border: 1px solid #e08600;
   padding: 10px;
+  border-radius: 10px;
 }
 .booksList-section .delete-btn {
   background: #e08600;
@@ -72,4 +96,35 @@ input {
   border: 1px solid #e08600;
   color: #e08600;
   background: white;
+}
+.display-btn {
+  background: #e08600;
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 8px;
+  margin: 0 30px;
+}
+.display-btn:hover {
+  border: 1px solid #e08600;
+  color: #e08600;
+  background: white;
+}
+@media (max-width: 960px) {
+  .container {
+  }
+  .book-name {
+    font-size: 8px;
+  }
+  .booksList-section {
+    padding: 8px;
+    font-size: 10px;
+  }
+  .display-btn {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 12px;
+  }
 }

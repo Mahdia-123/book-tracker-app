@@ -26,28 +26,34 @@
     <link rel="stylesheet" href="src/styles.css" />
     <title>📚 Book Tracker App</title>
   </head>
-  <div class="container">
-    <div class="form-container">
-      <h1 class="form-title">Add Your Next Read</h1>
-      <form id="form ">
-        <div class="grid grid-2-columns">
-          <input type="text" placeholder="Title" id="bookName" />
-          <input type="text" placeholder="Author" id="authorName" />
-          <button class="btn" id="button" type="submit">Add Book</button>
-        </div>
-        <div class="checkbox-row">
-          <input type="checkbox" id="finishedInput" />
-          <label for="finishedInput">Finished</label>
-        </div>
-      </form>
-      <section class="booksList-section">
-        <div id="booksList">
-          <!-- Books will be listed here -->
-        </div>
-      </section>
-    </div>
-  </div>
   <body>
+    <button class="change-theme">change Theme</button>
+    <div class="container">
+      <div class="form-container">
+        <h2 class="form-title">📙 Add Your Next Read</h2>
+        <form id="form ">
+          <div class="grid grid-2-columns">
+            <input type="text" placeholder="Title..." id="bookName" />
+            <input type="text" placeholder="Author..." id="authorName" />
+            <button class="btn" id="button" type="submit">Add Book</button>
+          </div>
+          <div class="checkbox-row">
+            <input type="checkbox" id="finishedInput" />
+            <label for="finishedInput">Finished</label>
+          </div>
+        </form>
+        <section class="booksList-section">
+          <div id="booksList">
+            <!-- Books will be listed here -->
+          </div>
+        </section>
+      </div>
+      <div class="d-flex justify-content-center mt-4">
+        <div><button class="display-btn" id="showBook">Show Books</button></div>
+        <div><button class="display-btn" id="hideBook">Hide Books</button></div>
+      </div>
+    </div>
+
     <script src="src/script.js"></script>
   </body>
 </html>

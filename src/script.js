@@ -15,8 +15,8 @@ function renderBooks() {
     entry.innerHTML = `
       <div class="d-flex justify-content-between mt-3 align-items-center">
         <div>
-          <div style="font-weight: bold; font-size: 16px;">${book}</div>
-          <div style="opacity: 0.6; font-size: 12px; margin-bottom: 10px;">${author}</div>
+          <div class="book-name" style="font-weight: bold; font-size: 16px;">${book}</div>
+          <div class="book-author" style="opacity: 0.6; font-size: 12px; margin-bottom: 10px;">${author}</div>
         </div>
         <div style="font-style: italic; font-weight: 600; color: ${
           finished ? "green" : "red"
@@ -69,3 +69,32 @@ button.addEventListener("click", dislplayBookList);
 
 // Render saved books on page load
 renderBooks();
+
+// displsu buttons
+let hideButton = document.getElementById("hideBook");
+let showButton = document.getElementById("showBook");
+
+function showBooks() {
+  booksList.style.display = "block";
+}
+function hideBooks() {
+  booksList.style.display = "none";
+}
+
+showButton.addEventListener("click", showBooks);
+hideButton.addEventListener("click", hideBooks);
+
+let body = document.body;
+
+function changeTheme() {
+  if (body.classList.contains("light-theme")) {
+    body.classList.remove("light-theme");
+    body.classList.add("dark-theme");
+  } else {
+    body.classList.remove("dark-theme");
+    body.classList.add("light-theme");
+  }
+}
+
+let changeThemeButton = document.querySelector(".change-theme");
+changeThemeButton.addEventListener("click", changeTheme);
